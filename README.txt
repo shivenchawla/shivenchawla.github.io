@@ -9,13 +9,16 @@ Preview locally:
 Then open http://localhost:8000.
 
 The homepage (index.html) contains an introduction, three highlights, and a
-brief academic-service summary. research.html contains the full collection,
+brief academic-service summary. Each highlight has its own destination:
+iot-research.html, adversarial-emulation.html, and contributions.html.
+research.html contains the publication, writing, and presentation collection,
 service.html contains academic service, and about.html contains career history.
-All four pages share assets/css/studio.css; only research.html loads
+All pages share assets/css/studio.css; only research.html loads
 assets/js/studio.js. Work entries are semantic HTML articles. Their data-topics
 and data-type attributes power optional search and filters. The HTML select
 options define valid topic and type values. Work is grouped by publication type,
-with separate talks and contributions groups; empty groups hide when filtering.
+with a separate talks group; empty groups hide when filtering. Framework and
+tooling entries live only on contributions.html, linked from shared navigation.
 Filters can be shared using
 ?topic=emulation, ?type=publication, or ?q=ATLAS.
 All work and profile links remain available without JavaScript. The topic map

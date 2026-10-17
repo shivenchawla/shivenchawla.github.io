@@ -43,6 +43,13 @@ cite { font-style: normal; }
 .highlight a { font-size: 12px; margin-top: auto; }
 .service-summary p { font-size: 14px; max-width: 620px; }
 .service-summary > a { font-size: 12px; }
+.back-link { display: inline-block; font-size: 12px; margin-bottom: 28px; }
+.resource-list { padding: 0; list-style: none; margin-block: 24px 32px; }
+.resource-list li { margin-bottom: 20px; }
+.resource-list span { display: block; font-size: 12px; color: var(--muted); margin-top: 5px; }
+.recording-panel { padding: 28px; background: var(--wash); border-left: 3px solid var(--accent); margin-block: 30px 18px; }
+.recording-panel h2 { margin-top: 10px; }
+.recording-panel p { font-size: 14px; }
 .collection-nav { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 12px; margin-bottom: 24px; }
 .work-group { margin-top: 40px; }
 .work-group > h2 { font-size: 26px; padding-bottom: 14px; border-bottom: 1px solid var(--line); margin-bottom: 0; }

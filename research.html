@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Shiven Chawla, Principal Security Researcher on Microsoft's AI Red Team. Cybersecurity and AI security research, adversarial emulation, publications, and academic service.">
   <meta name="theme-color" content="#fafaf8">
-  <meta property="og:title" content="Research &amp; Contributions | Shiven Chawla">
+  <meta property="og:title" content="Research &amp; Writing | Shiven Chawla">
   <meta property="og:description" content="Research in AI red teaming, adversarial machine learning, and connected-system security.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://shivenchawla.com/research.html">
   <link rel="canonical" href="https://shivenchawla.com/research.html">
   <link rel="stylesheet" href="assets/css/studio.css">
   <script src="assets/js/studio.js" defer></script>
-  <title>Research &amp; Contributions | Shiven Chawla</title>
+  <title>Research &amp; Writing | Shiven Chawla</title>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -20,14 +20,15 @@
     <a class="home-link" href="index.html">Shiven Chawla</a>
     <nav aria-label="Main navigation">
       <a href="research.html" aria-current="page">Research</a>
+      <a href="contributions.html">Contributions</a>
       <a href="service.html">Academic service</a>
       <a href="about.html">About</a>
     </nav>
   </header>
   <main id="main" class="page-width">
     <section class="page-section" id="research" aria-labelledby="research-title">
-      <h1 id="research-title">Research &amp; contributions</h1>
-      <p class="section-intro">Explore publications, technical writing, public presentations, and contributions by type or research topic.</p>
+      <h1 id="research-title">Research &amp; writing</h1>
+      <p class="section-intro">Explore publications, technical writing, and public presentations by type or research topic. Framework and tooling work is on the <a href="contributions.html">Contributions page</a>.</p>
       <nav class="collection-nav" aria-label="Research categories">
         <a href="#published-papers">Published papers</a>
         <a href="#preprints">Preprints</a>
@@ -35,9 +36,8 @@
         <a href="#articles">Articles</a>
         <a href="#thesis">Thesis</a>
         <a href="#talks">Talks</a>
-        <a href="#contributions">Contributions</a>
       </nav>
-      <form class="work-controls" id="work-controls" role="search" aria-label="Filter research and contributions" hidden>
+      <form class="work-controls" id="work-controls" role="search" aria-label="Filter research and writing" hidden>
         <div class="search-field">
           <label for="work-search">Search</label>
           <input id="work-search" type="search" placeholder="Title, topic, or contribution" autocomplete="off">
@@ -52,7 +52,6 @@
             <option value="report">Reports &amp; whitepapers</option>
             <option value="writing">Articles &amp; handbooks</option>
             <option value="talk">Talks</option>
-            <option value="contribution">Contributions</option>
           </select>
         </div>
         <div>
@@ -78,7 +77,7 @@
           <h3>Towards Deep-Learning-Driven Intrusion Detection for the Internet of Things</h3>
           <p class="authors">Geethapriya Thamilarasu and Shiven Chawla</p>
           <p>Research on applying deep learning to intrusion detection in IoT networks, building on graduate research at the University of Washington Bothell.</p>
-          <div class="entry-links"><a href="https://doi.org/10.3390/s19091977">Paper &nearr;</a></div>
+          <div class="entry-links"><a href="iot-research.html">Research overview &rarr;</a><a href="https://doi.org/10.3390/s19091977">Paper &nearr;</a></div>
         </article>
         <article class="work-entry" id="security-service-paper" data-topics="network-security adversarial-ml" data-type="publication">
           <p class="entry-meta">Conference paper <span aria-hidden="true">/</span> ACM, 2018</p>
@@ -112,7 +111,7 @@
         <article class="work-entry" id="pyrit-paper" data-topics="red-teaming adversarial-ml" data-type="preprint">
           <p class="entry-meta">Preprint <span aria-hidden="true">/</span> arXiv, 2024</p>
           <h3>PyRIT: A Framework for Security Risk Identification and Red Teaming in Generative AI Systems</h3>
-          <p>Co-authored the paper describing the PyRIT framework. This publication is distinct from the software contribution linked above.</p>
+          <p>Co-authored the paper describing the PyRIT framework. See the <a href="contributions.html#pyrit-work">software contribution</a> for project context.</p>
           <div class="entry-links"><a href="https://arxiv.org/abs/2410.02828">Preprint &nearr;</a></div>
         </article>
         </section>
@@ -180,34 +179,13 @@
           <p class="entry-meta">Talk <span aria-hidden="true">/</span> BSides Seattle, 2025</p>
           <h3>End-to-end adversarial emulation in practice</h3>
           <p>A public example of my work realizing adversarial attack scenarios against AI systems, presented at BSides Seattle.</p>
-          <div class="entry-links"><a href="https://bsides-seattle-2025.sessionize.com/session/843449">Session details &nearr;</a><a href="https://www.youtube.com/watch?v=z-U7c4dgFIo">Watch recording &nearr;</a></div>
+          <div class="entry-links"><a href="adversarial-emulation.html">Presentation overview &rarr;</a><a href="https://bsides-seattle-2025.sessionize.com/session/843449">Session details &nearr;</a><a href="https://www.youtube.com/watch?v=z-U7c4dgFIo">Watch recording &nearr;</a></div>
         </article>
         <article class="work-entry" id="iot-workshop" data-topics="network-security" data-type="talk">
           <p class="entry-meta">Workshop presentation <span aria-hidden="true">/</span> RSA Conference, 2017</p>
           <h3>Smart Security Service for IoT</h3>
           <p>Presented work on security services for IoT at an RSA Conference workshop.</p>
           <div class="entry-links"><a href="https://www.rsaconference.com/writable/files/About/smart_security_service_for_iot.pdf">Presentation PDF &nearr;</a></div>
-        </article>
-        </section>
-        <section class="work-group" id="contributions" aria-labelledby="contributions-title">
-          <h2 id="contributions-title">Contributions</h2>
-        <article class="work-entry" id="atlas-work" data-topics="threat-knowledge adversarial-ml red-teaming" data-type="contribution">
-          <p class="entry-meta">Contribution <span aria-hidden="true">/</span> Adversarial threat knowledge</p>
-          <h3>MITRE ATLAS</h3>
-          <p>Contributed to MITRE ATLAS, a knowledge base of adversary tactics and techniques against AI-enabled systems, during my work in Azure Trustworthy Machine Learning.</p>
-          <div class="entry-links"><a href="https://atlas.mitre.org/">MITRE ATLAS &nearr;</a></div>
-        </article>
-        <article class="work-entry" id="counterfit-work" data-topics="adversarial-ml red-teaming" data-type="contribution">
-          <p class="entry-meta">Contribution <span aria-hidden="true">/</span> AI security assessment tooling</p>
-          <h3>Counterfit</h3>
-          <p>Worked on the design and development of the open-source AI security assessment tool in Azure Trustworthy Machine Learning.</p>
-          <div class="entry-links"><a href="https://github.com/Azure/counterfit">Code &nearr;</a></div>
-        </article>
-        <article class="work-entry" id="pyrit-work" data-topics="red-teaming adversarial-ml" data-type="contribution">
-          <p class="entry-meta">Contribution <span aria-hidden="true">/</span> Generative AI security tooling</p>
-          <h3>PyRIT</h3>
-          <p>Contributed to the Python Risk Identification Tool for generative AI, developed and maintained by the development team associated with AI Red Team.</p>
-          <div class="entry-links"><a href="https://github.com/Azure/PyRIT">Code &nearr;</a></div>
         </article>
         </section>
       </div>
