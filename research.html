@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Shiven Chawla, Principal Security Researcher on Microsoft's AI Red Team. Cybersecurity and AI security research, adversarial emulation, publications, and academic engagement.">
   <meta name="theme-color" content="#fafaf8">
-  <meta property="og:title" content="Research &amp; Writing | Shiven Chawla">
+  <meta property="og:title" content="Research &amp; Publications | Shiven Chawla">
   <meta property="og:description" content="Research in AI red teaming, adversarial machine learning, and connected-system security.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://shivenchawla.com/research.html">
   <link rel="canonical" href="https://shivenchawla.com/research.html">
   <link rel="stylesheet" href="assets/css/studio.css">
   <script src="assets/js/studio.js" defer></script>
-  <title>Research &amp; Writing | Shiven Chawla</title>
+  <title>Research &amp; Publications | Shiven Chawla</title>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -27,7 +27,7 @@
   </header>
   <main id="main" class="page-width">
     <section class="page-section" id="research" aria-labelledby="research-title">
-      <h1 id="research-title">Research &amp; writing</h1>
+      <h1 id="research-title">Research &amp; Publications</h1>
       <p class="section-intro">Explore publications, technical writing, and public presentations by type or research topic. Framework and tooling work is on the <a href="contributions.html">Contributions page</a>.</p>
       <nav class="collection-nav" aria-label="Research categories">
         <a href="#published-papers">Published papers</a>
@@ -37,7 +37,7 @@
         <a href="#thesis">Thesis</a>
         <a href="#talks">Talks</a>
       </nav>
-      <form class="work-controls" id="work-controls" role="search" aria-label="Filter research and writing" hidden>
+      <form class="work-controls" id="work-controls" role="search" aria-label="Filter research and publications" hidden>
         <div class="search-field">
           <label for="work-search">Search</label>
           <input id="work-search" type="search" placeholder="Title, topic, or contribution" autocomplete="off">
@@ -70,8 +70,8 @@
       <p class="result-count" id="result-count" role="status" hidden></p>
       <noscript><p>All entries are listed below. Enable JavaScript to search or filter them.</p></noscript>
       <div id="work-list">
-        <section class="work-group" id="published-papers" aria-labelledby="published-papers-title">
-          <h2 id="published-papers-title">Journal &amp; conference papers</h2>
+        <details class="work-group" id="published-papers">
+          <summary><h2>Journal &amp; conference papers</h2></summary>
         <article class="work-entry" id="iot-paper" data-topics="network-security adversarial-ml" data-type="publication">
           <p class="entry-meta">Journal article <span aria-hidden="true">/</span> Sensors, 2019</p>
           <h3>Towards Deep-Learning-Driven Intrusion Detection for the Internet of Things</h3>
@@ -93,9 +93,9 @@
           <p>Earlier research on protocol optimization in cellular networks.</p>
           <div class="entry-links"><a href="https://ieeexplore.ieee.org/document/6897150/">Paper &nearr;</a></div>
         </article>
-        </section>
-        <section class="work-group" id="preprints" aria-labelledby="preprints-title">
-          <h2 id="preprints-title">Preprints</h2>
+        </details>
+        <details class="work-group" id="preprints">
+          <summary><h2>Preprints</h2></summary>
         <article class="work-entry" id="lessons-paper" data-topics="red-teaming emulation" data-type="preprint">
           <p class="entry-meta">Preprint &amp; Microsoft whitepaper <span aria-hidden="true">/</span> 2025</p>
           <h3>Lessons From Red Teaming 100 Generative AI Products</h3>
@@ -114,18 +114,18 @@
           <p>Co-authored the paper describing the PyRIT framework. See the <a href="contributions.html#pyrit-work">software contribution</a> for project context.</p>
           <div class="entry-links"><a href="https://arxiv.org/abs/2410.02828">Preprint &nearr;</a></div>
         </article>
-        </section>
-        <section class="work-group" id="reports" aria-labelledby="reports-title">
-          <h2 id="reports-title">Technical reports &amp; whitepapers</h2>
+        </details>
+        <details class="work-group" id="reports">
+          <summary><h2>Technical reports &amp; whitepapers</h2></summary>
         <article class="work-entry" id="phi4-report" data-topics="red-teaming adversarial-ml" data-type="report">
           <p class="entry-meta">Technical report <span aria-hidden="true">/</span> Microsoft, 2024</p>
           <h3>Phi-4 Technical Report</h3>
           <p>Contributed to the technical report documenting the Phi-4 model.</p>
           <div class="entry-links"><a href="https://arxiv.org/abs/2412.08905">Report &nearr;</a></div>
         </article>
-        </section>
-        <section class="work-group" id="articles" aria-labelledby="articles-title">
-          <h2 id="articles-title">Articles &amp; handbooks</h2>
+        </details>
+        <details class="work-group" id="articles">
+          <summary><h2>Articles &amp; handbooks</h2></summary>
         <article class="work-entry" id="sra-article" data-topics="red-teaming" data-type="writing">
           <p class="entry-meta">Article contribution <span aria-hidden="true">/</span> Security Risk Advisors, 2025</p>
           <h3>AI vs. AI: Red Teaming with PyRIT</h3>
@@ -162,9 +162,9 @@
           <p>Contributed to this article on AI security risk assessment using Counterfit.</p>
           <div class="entry-links"><a href="https://www.microsoft.com/en-us/security/blog/2021/05/03/ai-security-risk-assessment-using-counterfit/">Read article &nearr;</a></div>
         </article>
-        </section>
-        <section class="work-group" id="thesis" aria-labelledby="thesis-title">
-          <h2 id="thesis-title">Master's thesis</h2>
+        </details>
+        <details class="work-group" id="thesis">
+          <summary><h2>Master's thesis</h2></summary>
         <article class="work-entry" id="masters-thesis" data-topics="network-security adversarial-ml" data-type="thesis">
           <p class="entry-meta">Master's thesis <span aria-hidden="true">/</span> University of Washington, 2017</p>
           <h3>Deep Learning based Intrusion Detection System for Internet of Things</h3>
@@ -172,9 +172,9 @@
           <p>Graduate research exploring machine-learning-based intrusion detection in IoT networks.</p>
           <div class="entry-links"><a href="https://digital.lib.washington.edu/researchworks/handle/1773/39829">UW ResearchWorks &nearr;</a></div>
         </article>
-        </section>
-        <section class="work-group" id="talks" aria-labelledby="talks-title">
-          <h2 id="talks-title">Talks &amp; presentations</h2>
+        </details>
+        <details class="work-group" id="talks">
+          <summary><h2>Talks &amp; presentations</h2></summary>
         <article class="work-entry" id="adversarial-work" data-topics="red-teaming emulation" data-type="talk">
           <p class="entry-meta">Talk <span aria-hidden="true">/</span> BSides Seattle, 2025</p>
           <h3>End-to-end adversarial emulation in practice</h3>
@@ -187,7 +187,7 @@
           <p>Presented work on security services for IoT at an RSA Conference workshop.</p>
           <div class="entry-links"><a href="https://www.rsaconference.com/writable/files/About/smart_security_service_for_iot.pdf">Presentation PDF &nearr;</a></div>
         </article>
-        </section>
+        </details>
       </div>
       <div class="empty-state" id="empty-state" hidden><p>No matching entries. Try another term or reset the filters.</p></div>
     </section>

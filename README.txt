@@ -23,6 +23,13 @@ and data-type attributes power optional search and filters. The HTML select
 options define valid topic and type values. Work is grouped by publication type,
 with a separate talks group; empty groups hide when filtering. Framework and
 tooling entries live only on contributions.html, linked from shared navigation.
+Research & Publications categories use native details/summary controls and start
+collapsed. Search and filters expand matching categories; category navigation
+and direct entry links expand their targets. These controls work without
+JavaScript for manual browsing. Academic Engagement leads with supervisory
+committees and peer reviewing, followed by teaching.
+Homepage destination links open new tabs with noopener/noreferrer and an
+accessible notice. Skip-to-content and the home link remain same-tab.
 Filters can be shared using
 ?topic=emulation, ?type=publication, or ?q=ATLAS.
 All work and profile links remain available without JavaScript. The topic map

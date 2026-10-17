@@ -54,7 +54,11 @@ cite { font-style: normal; }
 .teaching-resources li { margin: 0; }
 .collection-nav { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 12px; margin-bottom: 24px; }
 .work-group { margin-top: 40px; }
-.work-group > h2 { font-size: 26px; padding-bottom: 14px; border-bottom: 1px solid var(--line); margin-bottom: 0; }
+.work-group { padding-top: 18px; }
+.work-group > summary { color: var(--ink); }
+.work-group > summary h2 { display: inline; font-size: 24px; margin: 0; }
+.work-group[open] > summary { margin-bottom: 8px; }
+.new-tab-note { font-size: 11px; color: var(--muted); }
 main > .page-section:first-child { border-top: 0; padding-top: 48px; }
 .introduction { padding-block: 60px 46px; }
 .profile-heading { display: flex; align-items: center; gap: 36px; margin-bottom: 34px; }

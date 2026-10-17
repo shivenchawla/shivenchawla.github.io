@@ -23,6 +23,7 @@ function updateResults() {
   emptyState.hidden = visible !== 0;
   for (const group of groups) {
     group.hidden = ![...group.querySelectorAll(".work-entry")].some(entry => !entry.hidden);
+    group.open = !group.hidden && Boolean(query || topicFilter.value || typeFilter.value);
   }
 }
 
@@ -56,8 +57,10 @@ function resetFilters() {
 // Preserve direct links to work entries even when a filter would hide them.
 function revealAnchor() {
   const entry = [...entries, ...groups].find(item => `#${item.id}` === window.location.hash);
-  if (entry && entry.hidden) {
-    resetFilters();
+  if (entry) {
+    const group = entry.closest(".work-group");
+    if (entry.hidden || group.hidden) resetFilters();
+    group.open = true;
     entry.scrollIntoView();
   }
 }
@@ -76,6 +79,10 @@ document.addEventListener("click", event => {
   const link = event.target.closest('a[href^="#"]');
   if (link && [...entries, ...groups].some(entry => `#${entry.id}` === link.getAttribute("href") && entry.hidden)) {
     resetFilters();
+  }
+  if (link) {
+    const target = [...entries, ...groups].find(entry => `#${entry.id}` === link.getAttribute("href"));
+    if (target) target.closest(".work-group").open = true;
   }
 });
 window.addEventListener("popstate", () => { readFilters(); revealAnchor(); });
