@@ -23,6 +23,9 @@ and data-type attributes power optional search and filters. The HTML select
 options define valid topic and type values. Work is grouped by publication type,
 with a separate talks group; empty groups hide when filtering. Framework and
 tooling entries live only on contributions.html, linked from shared navigation.
+PyRIT Ship is credited as a collaborative prototype with Joris, not a production
+product. Its BlueHat 2024 presentation is listed alongside BSides and RSA talks,
+with a cross-link to project context rather than duplicated project detail.
 Research & Publications categories use native details/summary controls and start
 collapsed. Search and filters expand matching categories; category navigation
 and direct entry links expand their targets. These controls work without
