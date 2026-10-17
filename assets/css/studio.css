@@ -41,8 +41,6 @@ cite { font-style: normal; }
 .highlight h3 { font-family: var(--serif); font-size: 22px; font-weight: 400; margin-bottom: 12px; }
 .highlight p { font-size: 13px; color: var(--muted); }
 .highlight a { font-size: 12px; margin-top: auto; }
-.service-summary p { font-size: 14px; max-width: 620px; }
-.service-summary > a { font-size: 12px; }
 .back-link { display: inline-block; font-size: 12px; margin-bottom: 28px; }
 .resource-list { padding: 0; list-style: none; margin-block: 24px 32px; }
 .resource-list li { margin-bottom: 20px; }
@@ -50,6 +48,10 @@ cite { font-style: normal; }
 .recording-panel { padding: 28px; background: var(--wash); border-left: 3px solid var(--accent); margin-block: 30px 18px; }
 .recording-panel h2 { margin-top: 10px; }
 .recording-panel p { font-size: 14px; }
+.lab-notice { border-left: 3px solid var(--accent); background: var(--wash); padding: 16px 20px; margin-block: 24px; }
+.lab-notice p { font-size: 13px; margin: 0; }
+.teaching-resources { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.teaching-resources li { margin: 0; }
 .collection-nav { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 12px; margin-bottom: 24px; }
 .work-group { margin-top: 40px; }
 .work-group > h2 { font-size: 26px; padding-bottom: 14px; border-bottom: 1px solid var(--line); margin-bottom: 0; }
@@ -110,6 +112,7 @@ details[open] > summary { margin-bottom: 24px; }
 .site-footer .credits { font-size: 10px; margin-top: 24px; margin-bottom: 0; }
 @media (max-width: 700px) {
   .highlights { grid-template-columns: 1fr; gap: 24px; }
+  .teaching-resources { grid-template-columns: 1fr; }
   .page-width { width: calc(100% - 40px); }
   .site-header { align-items: start; gap: 16px; }
   .site-header nav { gap: 6px 16px; justify-content: end; }

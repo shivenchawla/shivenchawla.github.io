@@ -8,11 +8,15 @@ Preview locally:
     python -m http.server 8000
 Then open http://localhost:8000.
 
-The homepage (index.html) contains an introduction, three highlights, and a
-brief academic-service summary. Each highlight has its own destination:
-iot-research.html, adversarial-emulation.html, and contributions.html.
+The homepage (index.html) contains an introduction and three broad entry points:
+Research & Publications, Contributions, and Academic Engagement. Each opens a
+distinct page. Detailed IoT research and adversarial-emulation pages remain
+linked from the research collection, not as subject-specific homepage categories.
 research.html contains the publication, writing, and presentation collection,
-service.html contains academic service, and about.html contains career history.
+service.html contains Academic Engagement (teaching, supervisory committees,
+and peer reviewing), and about.html contains career history. The existing
+service.html URL is retained. Six historical teaching resources are linked with
+isolated-lab guidance; no executable lab material is embedded in the website.
 All pages share assets/css/studio.css; only research.html loads
 assets/js/studio.js. Work entries are semantic HTML articles. Their data-topics
 and data-type attributes power optional search and filters. The HTML select
