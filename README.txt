@@ -31,9 +31,17 @@ Content boundaries:
 - MITRE ATLAS contribution details and the BSides talk's full case study await
   source verification. Current copy deliberately makes no specific technique,
   case-study ownership, or unverified outcome claims.
-- Selected publication titles are drawn from the supplied LinkedIn and Web of
-  Science records. Complete author lists, additional papers, and precise venue
-  metadata can be added after primary-source review.
+- Publication and writing records use the supplied publication inventory and its
+  source links. Published journal/conference papers precede theses, preprints,
+  reports, and articles; this is editorial ordering, not a citation ranking.
+  Scholar profiles were inaccessible during this update.
+- arXiv records are labeled preprints or technical reports, not conferences.
+  Lessons links its preprint and whitepaper together to avoid double counting.
+- Article contributions are user-reported, not assertions of byline authorship.
+  Exact contribution details and complete author lists need source verification.
+  The Counterfit article predates the listed development role; confirm the
+  relationship before strengthening its credit. The PyRIT announcement's source
+  URL dates it to February 2024, correcting the inventory's 2022 date.
 - The BSides entry uses a descriptive heading, not a verified session title.
 - Cyber-physical and industrial control security are forward-looking interests,
   not claims of established SCADA experience.

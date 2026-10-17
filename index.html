@@ -49,7 +49,7 @@
 
     <section class="page-section" id="research" aria-labelledby="research-title">
       <h2 id="research-title">Research &amp; contributions</h2>
-      <p class="section-intro">Selected publications, public adversarial research, and contributions to the AI security community.</p>
+      <p class="section-intro">Published research leads the collection, followed by talks, contributions, preprints, reports, and technical writing.</p>
       <form class="work-controls" id="work-controls" role="search" aria-label="Filter research and contributions" hidden>
         <div class="search-field">
           <label for="work-search">Search</label>
@@ -60,6 +60,9 @@
           <select id="type-filter">
             <option value="">All work</option>
             <option value="publication">Publications</option>
+            <option value="preprint">Preprints</option>
+            <option value="report">Reports &amp; whitepapers</option>
+            <option value="writing">Articles &amp; handbooks</option>
             <option value="talk">Talks</option>
             <option value="contribution">Contributions</option>
           </select>
@@ -80,11 +83,33 @@
       <p class="result-count" id="result-count" role="status" hidden></p>
       <noscript><p>All entries are listed below. Enable JavaScript to search or filter them.</p></noscript>
       <div id="work-list">
-        <article class="work-entry" id="lessons-paper" data-topics="red-teaming emulation" data-type="publication">
-          <p class="entry-meta">Publication <span aria-hidden="true">/</span> Preprint, 2025</p>
-          <h3>Lessons From Red Teaming 100 Generative AI Products</h3>
-          <p>Co-authored research drawing together lessons from red-teaming generative AI products.</p>
-          <div class="entry-links"><a href="https://arxiv.org/abs/2501.07238">Paper &nearr;</a><a href="https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/01/14/enhancing-ai-safety-insights-and-lessons-from-red-teaming/">Related blog &nearr;</a></div>
+        <article class="work-entry" id="iot-paper" data-topics="network-security adversarial-ml" data-type="publication">
+          <p class="entry-meta">Journal article <span aria-hidden="true">/</span> Sensors, 2019</p>
+          <h3>Towards Deep-Learning-Driven Intrusion Detection for the Internet of Things</h3>
+          <p class="authors">Geethapriya Thamilarasu and Shiven Chawla</p>
+          <p>Research on applying deep learning to intrusion detection in IoT networks, building on graduate research at the University of Washington Bothell.</p>
+          <div class="entry-links"><a href="https://doi.org/10.3390/s19091977">Paper &nearr;</a></div>
+        </article>
+        <article class="work-entry" id="security-service-paper" data-topics="network-security adversarial-ml" data-type="publication">
+          <p class="entry-meta">Conference paper <span aria-hidden="true">/</span> ACM, 2018</p>
+          <h3>Security as a Service: Real-time Intrusion Detection in Internet of Things</h3>
+          <p class="authors">Shiven Chawla and Geethapriya Thamilarasu</p>
+          <p>Research on real-time intrusion detection for connected IoT environments.</p>
+          <div class="entry-links"><a href="https://doi.org/10.1145/3212687.3212872">Paper &nearr;</a></div>
+        </article>
+        <article class="work-entry" id="cellular-paper" data-topics="network-security" data-type="publication">
+          <p class="entry-meta">Conference paper <span aria-hidden="true">/</span> IEEE, 2014</p>
+          <h3>Fat time optimization protocol in cellular networks</h3>
+          <p class="authors">Shiven Chawla and Sakshi Agarwal</p>
+          <p>Earlier research on protocol optimization in cellular networks.</p>
+          <div class="entry-links"><a href="https://ieeexplore.ieee.org/document/6897150/">Paper &nearr;</a></div>
+        </article>
+        <article class="work-entry" id="masters-thesis" data-topics="network-security adversarial-ml" data-type="publication">
+          <p class="entry-meta">Master's thesis <span aria-hidden="true">/</span> University of Washington, 2017</p>
+          <h3>Deep Learning based Intrusion Detection System for Internet of Things</h3>
+          <p class="authors">Shiven Chawla</p>
+          <p>Graduate research exploring machine-learning-based intrusion detection in IoT networks.</p>
+          <div class="entry-links"><a href="https://digital.lib.washington.edu/researchworks/handle/1773/39829">UW ResearchWorks &nearr;</a></div>
         </article>
         <article class="work-entry" id="adversarial-work" data-topics="red-teaming emulation" data-type="talk">
           <p class="entry-meta">Talk <span aria-hidden="true">/</span> BSides Seattle, 2025</p>
@@ -110,11 +135,71 @@
           <p>Contributed to the Python Risk Identification Tool for generative AI, developed and maintained by the development team associated with AI Red Team.</p>
           <div class="entry-links"><a href="https://github.com/Azure/PyRIT">Code &nearr;</a></div>
         </article>
-        <article class="work-entry" id="iot-paper" data-topics="network-security adversarial-ml" data-type="publication">
-          <p class="entry-meta">Publication <span aria-hidden="true">/</span> Network &amp; IoT security</p>
-          <h3>Towards Deep-Learning-Driven Intrusion Detection for the Internet of Things</h3>
-          <p>Co-authored research on applying deep learning to intrusion detection in IoT networks, building on graduate research at the University of Washington Bothell.</p>
-          <div class="entry-links"><a href="https://scholar.google.com/citations?hl=en&amp;user=bYypffMAAAAJ">Publication record &nearr;</a></div>
+        <article class="work-entry" id="iot-workshop" data-topics="network-security" data-type="talk">
+          <p class="entry-meta">Workshop presentation <span aria-hidden="true">/</span> RSA Conference, 2017</p>
+          <h3>Smart Security Service for IoT</h3>
+          <p>Presented work on security services for IoT at an RSA Conference workshop.</p>
+          <div class="entry-links"><a href="https://www.rsaconference.com/writable/files/About/smart_security_service_for_iot.pdf">Presentation PDF &nearr;</a></div>
+        </article>
+        <article class="work-entry" id="lessons-paper" data-topics="red-teaming emulation" data-type="preprint">
+          <p class="entry-meta">Preprint &amp; Microsoft whitepaper <span aria-hidden="true">/</span> 2025</p>
+          <h3>Lessons From Red Teaming 100 Generative AI Products</h3>
+          <p>Co-authored research drawing together lessons from red-teaming generative AI products. The preprint and Microsoft whitepaper are linked here as versions of the same work.</p>
+          <div class="entry-links"><a href="https://arxiv.org/abs/2501.07238">Preprint &nearr;</a><a href="https://airedteamwhitepapers.blob.core.windows.net/lessonswhitepaper/MS_AIRT_Lessons_eBook.pdf">Whitepaper PDF &nearr;</a><a href="https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/01/14/enhancing-ai-safety-insights-and-lessons-from-red-teaming/">Related blog &nearr;</a></div>
+        </article>
+        <article class="work-entry" id="phi3-paper" data-topics="red-teaming adversarial-ml" data-type="preprint">
+          <p class="entry-meta">Preprint <span aria-hidden="true">/</span> arXiv, 2024</p>
+          <h3>Phi-3 Safety Post-Training: Aligning Language Models with a "Break-Fix" Cycle</h3>
+          <p>Co-authored research on safety post-training and iterative evaluation of language models.</p>
+          <div class="entry-links"><a href="https://arxiv.org/abs/2407.13833">Preprint &nearr;</a></div>
+        </article>
+        <article class="work-entry" id="pyrit-paper" data-topics="red-teaming adversarial-ml" data-type="preprint">
+          <p class="entry-meta">Preprint <span aria-hidden="true">/</span> arXiv, 2024</p>
+          <h3>PyRIT: A Framework for Security Risk Identification and Red Teaming in Generative AI Systems</h3>
+          <p>Co-authored the paper describing the PyRIT framework. This publication is distinct from the software contribution linked above.</p>
+          <div class="entry-links"><a href="https://arxiv.org/abs/2410.02828">Preprint &nearr;</a></div>
+        </article>
+        <article class="work-entry" id="phi4-report" data-topics="red-teaming adversarial-ml" data-type="report">
+          <p class="entry-meta">Technical report <span aria-hidden="true">/</span> Microsoft, 2024</p>
+          <h3>Phi-4 Technical Report</h3>
+          <p>Contributed to the technical report documenting the Phi-4 model.</p>
+          <div class="entry-links"><a href="https://arxiv.org/abs/2412.08905">Report &nearr;</a></div>
+        </article>
+        <article class="work-entry" id="pyrit-article" data-topics="red-teaming" data-type="writing">
+          <p class="entry-meta">Article contribution <span aria-hidden="true">/</span> Microsoft Security Blog, 2024</p>
+          <h3>Announcing Microsoft's open automation framework to red team generative AI systems</h3>
+          <p>Contributed to this article introducing PyRIT for generative AI red teaming.</p>
+          <div class="entry-links"><a href="https://www.microsoft.com/en-us/security/blog/2024/02/22/announcing-microsofts-open-automation-framework-to-red-team-generative-ai-systems/">Read article &nearr;</a></div>
+        </article>
+        <article class="work-entry" id="secure-ai-article" data-topics="adversarial-ml threat-knowledge" data-type="writing">
+          <p class="entry-meta">Article contribution <span aria-hidden="true">/</span> Microsoft Security Blog, 2023</p>
+          <h3>New research, tooling, and partnerships for more secure AI and machine learning</h3>
+          <p>Contributed to this article on research, tooling, and partnerships for AI security.</p>
+          <div class="entry-links"><a href="https://www.microsoft.com/en-us/security/blog/2023/03/02/new-research-tooling-and-partnerships-for-more-secure-ai-and-machine-learning/">Read article &nearr;</a></div>
+        </article>
+        <article class="work-entry" id="bluehat-article" data-topics="red-teaming" data-type="writing">
+          <p class="entry-meta">Article contribution <span aria-hidden="true">/</span> Microsoft Security Response Center, 2024</p>
+          <h3>Announcing the BlueHat 2024 sessions</h3>
+          <p>Contributed to this article announcing the BlueHat 2024 sessions.</p>
+          <div class="entry-links"><a href="https://msrc.microsoft.com/blog/2024/10/announcing-the-bluehat-2024-sessions/">Read article &nearr;</a></div>
+        </article>
+        <article class="work-entry" id="sra-article" data-topics="red-teaming" data-type="writing">
+          <p class="entry-meta">Article contribution <span aria-hidden="true">/</span> Security Risk Advisors, 2025</p>
+          <h3>AI vs. AI: Red Teaming with PyRIT</h3>
+          <p>Technical writing contribution on AI red teaming with PyRIT.</p>
+          <div class="entry-links"><a href="https://sra.io/blog/ai-vs-ai-red-teaming-with-pyrit/">Read article &nearr;</a></div>
+        </article>
+        <article class="work-entry" id="counterfit-article" data-topics="adversarial-ml red-teaming" data-type="writing">
+          <p class="entry-meta">Article contribution <span aria-hidden="true">/</span> Microsoft Security Blog, 2021</p>
+          <h3>AI security risk assessment using Counterfit</h3>
+          <p>Contributed to this article on AI security risk assessment using Counterfit.</p>
+          <div class="entry-links"><a href="https://www.microsoft.com/en-us/security/blog/2021/05/03/ai-security-risk-assessment-using-counterfit/">Read article &nearr;</a></div>
+        </article>
+        <article class="work-entry" id="ai-cybersecurity-handbook" data-topics="red-teaming adversarial-ml" data-type="writing">
+          <p class="entry-meta">Handbook contribution <span aria-hidden="true">/</span> Orange Cyberdefense, 2024</p>
+          <h3>AI and Cybersecurity</h3>
+          <p>Contributed to the handbook on AI and cybersecurity.</p>
+          <div class="entry-links"><a href="https://www.orangecyberdefense.com/fileadmin/dk/Events/OCD_Live_24/AI_and_Cybersecurity_How_Microsoft_Empowers_Defenders.pdf">Handbook PDF &nearr;</a></div>
         </article>
       </div>
       <div class="empty-state" id="empty-state" hidden><p>No matching entries. Try another term or reset the filters.</p></div>

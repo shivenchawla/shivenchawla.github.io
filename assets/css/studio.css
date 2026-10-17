@@ -53,6 +53,7 @@ cite { font-style: normal; }
 .entry-meta span { margin-inline: 6px; color: #737f88; }
 .work-entry h3 { font-family: var(--serif); font-size: 23px; font-weight: 400; margin-bottom: 10px; }
 .work-entry > p:not(.entry-meta) { font-size: 14px; margin-bottom: 12px; }
+.work-entry > p.authors { color: var(--muted); font-size: 12px; }
 .entry-links { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 12px; }
 .empty-state { padding-block: 36px; color: var(--muted); }
 .subheading { font-size: 17px; font-weight: 600; margin-top: 30px; margin-bottom: 8px; }
