@@ -1,5 +1,5 @@
-Shiven Chawla - Research Studio
-==============================
+Shiven Chawla - Personal Research Homepage
+========================================
 
 Static research portfolio, served directly by GitHub Pages. No build step,
 package installation, API credentials, or runtime profile services are needed.
@@ -10,15 +10,17 @@ Then open http://localhost:8000.
 
 The redesigned homepage uses index.html, assets/css/studio.css, and
 assets/js/studio.js. Work entries are semantic HTML articles. Their data-topics
-and data-type attributes power the optional search and filters. Topic names
-and descriptions are maintained in studio.js and the HTML filter options.
-Filters can be shared using ?topic=emulation, ?type=supervision, or ?q=ATLAS.
-All work and profile links remain available without JavaScript.
+and data-type attributes power optional search and filters. The HTML select
+options define valid topic and type values. Filters can be shared using
+?topic=emulation, ?type=publication, or ?q=ATLAS.
+All work and profile links remain available without JavaScript. The topic map
+is deferred; research appears in one collection and student work appears only
+in Academic Service. The career timeline uses native expandable details.
 
 GitHub Pages currently publishes the root of master. Work on a separate branch
 does not change production. Preserve CNAME (shivenchawla.com), .nojekyll,
 resume.html, and pdfFiles/ when deploying. The original resume and older
-projects remain linked from the About section as legacy material.
+projects remain linked from the Background section as legacy material.
 
 Content boundaries:
 - Do not publish raw LinkedIn or Web of Science exports or reviewed manuscript
@@ -29,8 +31,12 @@ Content boundaries:
 - MITRE ATLAS contribution details and the BSides talk's full case study await
   source verification. Current copy deliberately makes no specific technique,
   case-study ownership, or unverified outcome claims.
-- The publication profiles link to the broader record; a verified bibliography
-  can be added after source review.
+- Selected publication titles are drawn from the supplied LinkedIn and Web of
+  Science records. Complete author lists, additional papers, and precise venue
+  metadata can be added after primary-source review.
+- The BSides entry uses a descriptive heading, not a verified session title.
+- Cyber-physical and industrial control security are forward-looking interests,
+  not claims of established SCADA experience.
 
 Original template attribution (retained legacy assets and resume):
 Strata by HTML5 UP
