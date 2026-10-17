@@ -12,16 +12,20 @@ The homepage (index.html) contains an introduction and three broad entry points:
 Research & Publications, Contributions, and Academic Engagement. Each opens a
 distinct page. Detailed IoT research and adversarial-emulation pages remain
 linked from the research collection, not as subject-specific homepage categories.
-research.html contains the publication, writing, and presentation collection,
+research.html contains the publication and writing collection. talks.html holds
+BSides, BlueHat, and RSA presentations with recordings or presentation materials,
 service.html contains Academic Engagement (teaching, supervisory committees,
 and peer reviewing), and about.html contains career history. The existing
 service.html URL is retained. Six historical teaching resources are linked with
 isolated-lab guidance; no executable lab material is embedded in the website.
 All pages share assets/css/studio.css; only research.html loads
-assets/js/studio.js. Work entries are semantic HTML articles. Their data-topics
+assets/js/studio.js. Academic Engagement uses assets/js/disclosures.js to
+expand directly linked sections. Its three headings use native details/summary
+controls and start collapsed; manual expansion works without JavaScript.
+Work entries are semantic HTML articles. Their data-topics
 and data-type attributes power optional search and filters. The HTML select
 options define valid topic and type values. Work is grouped by publication type,
-with a separate talks group; empty groups hide when filtering. Framework and
+with empty groups hidden when filtering. Talks have their own page. Framework and
 tooling entries live only on contributions.html, linked from shared navigation.
 PyRIT Ship is credited as a collaborative prototype with Joris, not a production
 product. Its BlueHat 2024 presentation is listed alongside BSides and RSA talks,
