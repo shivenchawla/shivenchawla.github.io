@@ -8,10 +8,15 @@ Preview locally:
     python -m http.server 8000
 Then open http://localhost:8000.
 
-The redesigned homepage uses index.html, assets/css/studio.css, and
+The homepage (index.html) contains an introduction, three highlights, and a
+brief academic-service summary. research.html contains the full collection,
+service.html contains academic service, and about.html contains career history.
+All four pages share assets/css/studio.css; only research.html loads
 assets/js/studio.js. Work entries are semantic HTML articles. Their data-topics
 and data-type attributes power optional search and filters. The HTML select
-options define valid topic and type values. Filters can be shared using
+options define valid topic and type values. Work is grouped by publication type,
+with separate talks and contributions groups; empty groups hide when filtering.
+Filters can be shared using
 ?topic=emulation, ?type=publication, or ?q=ATLAS.
 All work and profile links remain available without JavaScript. The topic map
 is deferred; research appears in one collection and student work appears only
@@ -20,7 +25,7 @@ in Academic Service. The career timeline uses native expandable details.
 GitHub Pages currently publishes the root of master. Work on a separate branch
 does not change production. Preserve CNAME (shivenchawla.com), .nojekyll,
 resume.html, and pdfFiles/ when deploying. The original resume and older
-projects remain linked from the Background section as legacy material.
+projects remain linked from the About page as legacy material.
 
 Content boundaries:
 - Do not publish raw LinkedIn or Web of Science exports or reviewed manuscript

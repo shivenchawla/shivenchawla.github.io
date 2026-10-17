@@ -5,6 +5,7 @@ const search = document.querySelector("#work-search");
 const topicFilter = document.querySelector("#topic-filter");
 const typeFilter = document.querySelector("#type-filter");
 const entries = [...document.querySelectorAll(".work-entry")];
+const groups = [...document.querySelectorAll(".work-group")];
 const resultCount = document.querySelector("#result-count");
 const emptyState = document.querySelector("#empty-state");
 
@@ -20,6 +21,9 @@ function updateResults() {
   }
   resultCount.textContent = `${visible} of ${entries.length} entries shown`;
   emptyState.hidden = visible !== 0;
+  for (const group of groups) {
+    group.hidden = ![...group.querySelectorAll(".work-entry")].some(entry => !entry.hidden);
+  }
 }
 
 function writeFilters() {
@@ -51,7 +55,7 @@ function resetFilters() {
 
 // Preserve direct links to work entries even when a filter would hide them.
 function revealAnchor() {
-  const entry = entries.find(item => `#${item.id}` === window.location.hash);
+  const entry = [...entries, ...groups].find(item => `#${item.id}` === window.location.hash);
   if (entry && entry.hidden) {
     resetFilters();
     entry.scrollIntoView();
@@ -70,7 +74,7 @@ controls.addEventListener("reset", event => {
 });
 document.addEventListener("click", event => {
   const link = event.target.closest('a[href^="#"]');
-  if (link && entries.some(entry => `#${entry.id}` === link.getAttribute("href") && entry.hidden)) {
+  if (link && [...entries, ...groups].some(entry => `#${entry.id}` === link.getAttribute("href") && entry.hidden)) {
     resetFilters();
   }
 });
