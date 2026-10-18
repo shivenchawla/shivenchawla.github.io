@@ -12,6 +12,9 @@ The homepage (index.html) contains an introduction and three broad entry points:
 Research & Publications, Contributions, and Academic Engagement. Each opens a
 distinct page. Detailed IoT research and adversarial-emulation pages remain
 linked from the research collection, not as subject-specific homepage categories.
+The homepage introduction explains the adversarial-emulation approach and names
+research outputs and public presentations. Entry-point descriptions provide
+concrete evidence without duplicating full publication or service lists.
 research.html contains the publication and writing collection. talks.html holds
 BSides, BlueHat, and RSA presentations with recordings or presentation materials,
 service.html contains Academic Engagement (teaching, supervisory committees,
