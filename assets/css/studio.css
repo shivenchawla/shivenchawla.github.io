@@ -67,7 +67,7 @@ main > .page-section:first-child { border-top: 0; padding-top: 48px; }
 .profile-links { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 12px; }
 .introduction-copy { font-size: 16px; line-height: 1.65; }
 .introduction-copy p { margin-bottom: 20px; }
-.introduction-copy .lead { font-size: 23px; line-height: 1.55; }
+.introduction-copy .lead { font-size: 21px; line-height: 1.55; }
 .introduction-copy .research-outlook { color: var(--muted); margin-top: 24px; }
 .introduction-copy p:last-child { margin-bottom: 0; }
 .lead { font-family: var(--serif); font-size: 23px; line-height: 1.55; }
@@ -130,7 +130,7 @@ details[open] > summary { margin-bottom: 24px; }
   h1 { font-size: 32px; }
   .profile-links { gap: 6px 14px; }
   .lead { font-size: 21px; }
-  .introduction-copy .lead { font-size: 21px; }
+  .introduction-copy .lead { font-size: 19px; }
   .page-section { padding-block: 32px 36px; }
   .search-field { flex-basis: 100%; }
   .work-controls > div:not(.search-field) { flex: 1; min-width: 125px; }
