@@ -47,9 +47,8 @@ is deferred; research appears in one collection and student work appears only
 in Academic Service. The career timeline uses native expandable details.
 
 GitHub Pages currently publishes the root of master. Work on a separate branch
-does not change production. Preserve CNAME (shivenchawla.com), .nojekyll,
-resume.html, and pdfFiles/ when deploying. The original resume and older
-projects remain linked from the About page as legacy material.
+does not change production. Preserve CNAME (shivenchawla.com) and .nojekyll
+when deploying. The legacy resume page and PDF are intentionally excluded.
 
 Content boundaries:
 - Do not publish raw LinkedIn or Web of Science exports or reviewed manuscript
